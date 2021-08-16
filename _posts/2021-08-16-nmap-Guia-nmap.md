@@ -119,7 +119,8 @@ nmap --open (ip)
 ```
 ## Junta de varios parametros
 Todos estos parametros pueden ir juntos en un solo comando lo cual agiliza mucho mas el escaneo en si
-ej:
+
+Ej:
 ```
 nmap -p- -n --open -T5 -v (ip) -oG puertos
 ```
