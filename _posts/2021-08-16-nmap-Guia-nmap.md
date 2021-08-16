@@ -12,7 +12,8 @@ tags:
   - nmap
   - enumeration
 ---
-Esta es una guia basica de la herramienta nmap esta herramienta sirve para el escaneo de puertos.
+Esta es una guia basica de la herramienta nmap, esta herramienta sirve para el escaneo de puertos.
+
 Pagina de github oficial de nmap:
 https://github.com/nmap/nmap
 
@@ -22,7 +23,8 @@ https://github.com/nmap/nmap
 
 ### Scaneo de puertos basico
 
-Este escaneo no es recomendado solo es un ejemplo basico del uso de nmap (todos estos comandos se usan desde la terminal)
+Este escaneo no es recomendado solo es un ejemplo basico del uso de nmap 
+(todos estos comandos se usan desde la terminal)
 
 ```
 nmap (ip)
@@ -32,7 +34,37 @@ Ejemplo:
 ```
 nmap 143.0.13.4
 ```
-
+Estos scaneos pueden usarse con mas de una ip
+```
+nmap 143.0.13.5 192.168.1.136
+```
+Uso de subred
+```
+nmap 192.167.9.*
+```
+Escaneo de puertos mediante un fichero .txt con las ips anotadas
+```
+nmap -iL objetivos.txt
+```
+fichero objetivos.txt:
+```
+192.168.1.124
+192.168.1.129
+192.168.1.123
+192.168.1.125
+```
+Escaneo de rango de ip 
+```
+nmap 192.168.1.123-140
+```
+Uso de nmap para conocer el sistema operativo del objetivo
+```
+nmap -o 192.168.1.143
+```
+Uso de nmap para listar equipos dentro de una red (Solo activos).
+```
+nmap -sP 192.157.1.*
+```
 ## Uso de nmap con parametros
 ### Parametros de nmap 
 Nmap ocupa parametros para funcionar existe una gran variedad de parametros en esta guia se veran algunos de ellos.
@@ -52,7 +84,7 @@ nmap -p 10-80 (ip)
 ```
 
 
-### Useless websites and trolling
+### Parametro -
 
 **bestmedsupply.htb**
 
