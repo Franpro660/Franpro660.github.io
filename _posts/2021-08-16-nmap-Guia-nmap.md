@@ -1,8 +1,8 @@
 ---
 layout: single
-title: Flujab - Hack The Box
-excerpt: "Flujab was without a doubt one of the toughest HTB box. It's got a ton of vhosts that force you to enumerate a lot of things and make sure you don't get distracted by the quantity of decoys and trolls left around. The key on this box is to stay 'in scope' as the box author hinted at before the box was released, so that means enumerating two specific domains without getting distracted by all the other stuff on the box."
-date: 2019-06-15
+title: Nmap - Guia de uso nmap
+excerpt: "Guia basica de uso de la herramienta nmap escaneo de puertos."
+date: 2021-08-11
 classes: wide
 header:
   teaser: /assets/images/htb-writeup-flujab/flujab_logo.png
