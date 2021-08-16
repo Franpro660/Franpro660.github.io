@@ -5,7 +5,7 @@ excerpt: "Guia basica de uso de la herramienta nmap."
 date: 2021-08-11
 classes: wide
 header:
-  teaser: /assets/images/nmap-logo.png
+  teaser: nmap.png
 categories:
   -nmap
 tags:  
