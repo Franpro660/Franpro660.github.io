@@ -5,19 +5,12 @@ excerpt: "Guia basica de uso de la herramienta nmap escaneo de puertos."
 date: 2021-08-11
 classes: wide
 header:
-  teaser: /assets/images/htb-writeup-flujab/flujab_logo.png
+  teaser: /assets/images/htb-writeup-flujab/nmap-logo.png
 categories:
-  - hackthebox
-  - infosec
+  -nmap
 tags:  
-  - smtp
-  - sqli
+  - nmap
   - enumeration
-  - screen
-  - exploit
-  - waf
-  - tamper script
-  - weak ssh keys
 ---
 
 ![](/assets/images/htb-writeup-flujab/flujab_logo.png)
