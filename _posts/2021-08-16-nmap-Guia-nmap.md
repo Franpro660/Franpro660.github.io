@@ -12,15 +12,13 @@ tags:
   - nmap
   - enumeration
 ---
-Esta es una guia basica de la herramienta nmap, esta herramienta sirve para el escaneo de puertos.
-
+Esta es una guia basica de la herramienta nmap.
 Pagina de github oficial de nmap:
 https://github.com/nmap/nmap
 
 
 
 ## Uso de nmap 
-
 ### Escaneo de puertos basico
 
 Este escaneo no es recomendado solo es un ejemplo basico del uso de nmap 
@@ -32,7 +30,7 @@ Ejemplo:
 ```
 nmap 143.0.13.4
 ```
-Estos scaneos pueden usarse con mas de una ip
+Estos escaneos pueden usarse con mas de una ip
 ```
 nmap 143.0.13.5 192.168.1.136
 ```
