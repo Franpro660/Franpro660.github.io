@@ -127,4 +127,5 @@ Lo que se podria hacer es hacer un escaneo de el servisio que este corriento en 
 nmap -sV -sC -p 80, 50 (ip)
 ```
 En base a esto ya se podria ver si ese servicio/version es vurnerable y buscar o programar algun exploit para posteriormente atacar ese servicio.
-Esta echa con fines educativos.
+
+Esta guia echa con fines educativos y realizacion de CTFs.
