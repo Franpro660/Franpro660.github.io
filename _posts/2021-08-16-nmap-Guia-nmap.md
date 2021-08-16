@@ -131,4 +131,4 @@ nmap -sV -sC -p 80, 50 (ip)
 ```
 En base a esto ya se podria ver si ese servicio/version es vurnerable y buscar o programar algun exploit para posteriormente atacar ese servicio.
 
-Esta guia echa con fines educativos y realizacion de CTFs.
+Esta guia esta hecha con fines educativos y realizacion de CTFs.
