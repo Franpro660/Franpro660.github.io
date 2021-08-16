@@ -21,7 +21,7 @@ https://github.com/nmap/nmap
 
 ## Uso de nmap 
 
-### EScaneo de puertos basico
+### Escaneo de puertos basico
 
 Este escaneo no es recomendado solo es un ejemplo basico del uso de nmap 
 (todos estos comandos se usan desde la terminal)
