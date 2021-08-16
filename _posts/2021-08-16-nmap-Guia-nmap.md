@@ -111,7 +111,8 @@ Este parametro sirve para poder exportar nuestro escaneo a un fichero grepeable
 nmap (ip) -oG Puertos
 ```
 ### Otros
-Podemos filtrar con el parametro open para decirle a nmap que solo necesitamos los puertos con estatus open 
+Podemos filtrar con el parametro open para decirle a nmap que solo necesitamos los puertos con estatus open,
+
 este comando tambien puede servir para filtrar por cerrados o filtrados 
 ```
 nmap --open (ip)
@@ -124,10 +125,16 @@ Ej:
 nmap -p- -n --open -T5 -v (ip) -oG puertos
 ```
 Imaginemos que este escaneo nos da como resultado los puertos 80, 50 abiertos
+
 Lo que se podria hacer es hacer un escaneo de el servicio que este corriendo en estos puertos y la version de este mismo
 ``` 
 nmap -sV -sC -p 80, 50 (ip)
 ```
 En base a esto ya se podria ver si ese servicio/version es vurnerable y buscar o programar algun exploit para posteriormente atacar ese servicio.
+
+Esta guia recorre algunos de los comandos y parametros posibles de nmap pero existen muchos mas puedes ver el manual de instrucciones de nmap escribiendo esto en tu terminal
+```
+man nmap
+```
 
 Esta guia esta hecha con fines educativos y realizacion de CTFs.
