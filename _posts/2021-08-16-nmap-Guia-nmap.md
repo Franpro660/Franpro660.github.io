@@ -112,9 +112,11 @@ Este parametro sirve para poder exportar nuestro escaneo a un fichero grepeable
 nmap (ip) -oG Puertos
 ```
 ### Otros
-Podemos filtrar con el parametro --open para decirle a nmap que solo necesitamos los puertos con estatus open 
+Podemos filtrar con el parametro open para decirle a nmap que solo necesitamos los puertos con estatus open 
 este comando tambien puede servir para filtrar por cerrados o filtrados 
-
+```
+nmap --open (ip)
+```
 ## Junta de varios parametros
 Todos estos parametros pueden ir juntos en un solo comando lo cual agiliza mucho mas el escaneo en si
 ej:
