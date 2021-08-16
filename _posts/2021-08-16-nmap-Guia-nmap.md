@@ -125,7 +125,7 @@ Ej:
 nmap -p- -n --open -T5 -v (ip) -oG puertos
 ```
 Imaginemos que este escaneo nos da como resultado los puertos 80, 50 abiertos
-Lo que se podria hacer es hacer un escaneo de el servisio que este corriento en estos puertos y la version de este mismo
+Lo que se podria hacer es hacer un escaneo de el servicio que este corriendo en estos puertos y la version de este mismo
 ``` 
 nmap -sV -sC -p 80, 50 (ip)
 ```
