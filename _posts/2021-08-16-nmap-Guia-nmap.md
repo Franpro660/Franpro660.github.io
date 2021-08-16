@@ -13,7 +13,8 @@ tags:
   - enumeration
 ---
 Esta es una guia basica de la herramienta nmap.
-Pagina de github oficial de nmap:
+
+Repositorio oficial de nmap:
 https://github.com/nmap/nmap
 
 
