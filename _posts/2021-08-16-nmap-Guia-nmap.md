@@ -5,7 +5,7 @@ excerpt: "Guia basica de uso de la herramienta nmap."
 date: 2021-08-11
 classes: wide
 header:
-  teaser: nmap.png
+  teaser: https://www.linuxadictos.com/wp-content/uploads/nmap-logo.png
 categories:
   -nmap
 tags:  
