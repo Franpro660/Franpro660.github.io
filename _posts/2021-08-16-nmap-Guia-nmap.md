@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Nmap - Guia de uso nmap
-excerpt: "Guia basica de uso de la herramienta nmap escaneo de puertos."
+excerpt: "Guia basica de uso de la herramienta nmap."
 date: 2021-08-11
 classes: wide
 header:
