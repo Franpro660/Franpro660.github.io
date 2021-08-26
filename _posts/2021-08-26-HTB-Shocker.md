@@ -85,5 +85,7 @@ Encontramos un archivo user-sh
 <p align="left">
 <img src="/assets/images/shocker/user-sh.png">
 </p>
-
-
+Entramos al recurso /cgi-bin/user.sh
+<p align="left">
+<img src="/assets/images/shocker/recurso.png">
+</p>
