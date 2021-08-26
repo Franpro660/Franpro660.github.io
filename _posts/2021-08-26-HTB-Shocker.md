@@ -19,7 +19,8 @@ Esta es una resolucion completa de la maquina shocker de hack the box una maquin
 Intrusion = facil.
 
 Escala de privilegios = facil. 
-## Reconocimiento de puertos
+## Reconocimiento general de la maquina 
+### Reconocimiento de puertos
 Realizamos el escaneo con nmap 
 ```
 nmap -p- --open -n -T5 -v 10.10.10.56
@@ -51,3 +52,29 @@ Ocupe el diccionario /usr/share/dirb/wordlists/common.txt de dirbuster pero otro
 <p align="left">
 <img src="/assets/images/shocker/wfuzz.png">
 </p>
+Podemos ver un directorio cgi-bin/
+## Intrusion a la maquina
+### cgi-bin/
+Esta carpeta se usa principalmente para guardar archivos con la extension cgi pero no es una obligacion que tengan esta extension para ser guardados aqui
+#### Archivos .cgi 
+Estos archivos son utilizados principalmente para realizar tareas que no son soportadas por el estandar html 
+
+Ej:
+Base de datos
+Contadores 
+
+### Uso de wfuzz para encontrar archivos con diferentes extensiones
+Creamos un diccionario con extensiones variadas para luego usarlo
+
+extensiones.txt
+```
+html 
+php
+pl
+cgi 
+txt
+sh 
+```
+Uso de wfuzz con dos diccionarios 
+```
+wfuzz -c --hc=440 -t 500 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -w extensiones.txt http://10.10.10.56/
