@@ -26,12 +26,12 @@ nmap -p- --open -n -T5 -v 10.10.10.56
 ```
 Esta es la salida de nmap: 
 <p align="center">
-<img src="/assets/images//shocker/salida.png">
+<img src="/assets/images/salida-shocker.png">
 </p>
 
 Vemos que tiene un servidor http por el puerto 80 al entrar a esa pagina web vemos la suigente imagen:\
 <p align="center">
-<img src="/assets/images/shocker/web.png">
+<img src="/assets/images/web-shocker.png">
 </p>
 
 
