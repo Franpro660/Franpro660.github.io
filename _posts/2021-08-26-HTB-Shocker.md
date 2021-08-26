@@ -18,29 +18,24 @@ Esta es una resolucion completa de la maquina shocker de hack the box una maquin
 Intrusion = facil.
 
 Escala de privilegios = facil. 
-
 # Reconocimiento de puertos
 Realizamos el escaneo con nmap 
 ```
 nmap -p- --open -n -T5 -v 10.10.10.56
 ```
 Esta es la salida de nmap: 
-<p align="center">
+<p align="left">
 <img src="/assets/images/salida-shocker.png">
 </p>
 
-Vemos que tiene un servidor http por el puerto 80 al entrar a esa pagina web vemos la suigente imagen:\
-<p align="center">
+Vemos que tiene un servidor http por el puerto 80 al entrar a esa pagina web vemos la suigente imagen:
+<p align="left">
 <img src="/assets/images/web-shocker.png">
 </p>
 
+El codigo fuente muestra esto:
 
 
-## Uso de nmap con parametros
-### Parametros de nmap 
-Nmap ocupa parametros para funcionar existe una gran variedad de parametros en esta guia se veran algunos de ellos.
-### Parametro -p-
-Este parametro escanea todo el rango de puertos disponibles (65536 puertos).
 ```
 nmap -p- (ip)
 ```
