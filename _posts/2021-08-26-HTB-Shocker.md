@@ -1,19 +1,19 @@
 ---
 layout: single
-title: Nmap - Guia de uso nmap
-excerpt: "Guia basica de uso de la herramienta nmap."
-date: 2021-08-11
+title: Hack the box-Shocker 
+excerpt: "Maquina Shocker hack the box"
+date: 2021-08-26
 classes: wide
 header:
-  teaser: https://www.linuxadictos.com/wp-content/uploads/nmap-logo.png
+  teaser: https://i.ytimg.com/vi/JGLoEts33tI/mqdefault.jpg
 categories:
-  -nmap
+  -HTB -CTF
 tags:  
-  - nmap
+  - HTB
   - enumeration
+  - explotacion
 ---
-Esta es una guia basica de la herramienta nmap.
-
+Esta es una resolucion completa de la maquina shocker de hack the box una maquina linux de 64 bits 
 Repositorio oficial de nmap:
 https://github.com/nmap/nmap
 
