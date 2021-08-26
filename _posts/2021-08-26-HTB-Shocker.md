@@ -15,8 +15,9 @@ tags:
 ---
 Esta es una resolucion completa de la maquina shocker de hack the box una maquina linux de 64 bits.
 ## Nivel de dificultad:
-intrusion = facil.
-escala de privilegios = facil. 
+Intrusion = facil.
+
+Escala de privilegios = facil. 
 
 # Reconocimiento de puertos
 Realizamos el escaneo con nmap 
@@ -24,7 +25,9 @@ Realizamos el escaneo con nmap
 nmap -p- --open -n -T5 -v 10.10.10.56
 ```
 Esta es la salida de nmap: 
-
+<p align="center">
+<img src="/assets/images/salida.png">
+</p>
 
 Vemos que tiene un servidor http por el puerto 80 al entrar a esa pagina web vemos la suigente imagen:
 
