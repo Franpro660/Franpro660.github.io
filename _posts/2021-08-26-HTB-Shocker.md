@@ -56,11 +56,12 @@ Podemos ver un directorio cgi-bin/
 ## Intrusion a la maquina
 ### cgi-bin/
 Esta carpeta se usa principalmente para guardar archivos con la extension cgi pero no es una obligacion que tengan esta extension para ser guardados aqui
-#### Archivos .cgi 
+### Archivos .cgi 
 Estos archivos son utilizados principalmente para realizar tareas que no son soportadas por el estandar html 
 
 Ej:
 Base de datos
+
 Contadores 
 
 ### Uso de wfuzz para encontrar archivos con diferentes extensiones
@@ -77,4 +78,11 @@ sh
 ```
 Uso de wfuzz con dos diccionarios 
 ```
-wfuzz -c --hc=440 -t 500 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -w extensiones.txt http://10.10.10.56/
+wfuzz -c --hc=440 -t 500 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -w extensiones.txt http://10.10.10.56/cgi-bin/FUZZ.FUZ2Z
+```
+Encontramos un archivo user-sh
+<p align="left">
+<img src="/assets/images/shocker/user-sh.png">
+</p>
+
+
