@@ -5,7 +5,7 @@ excerpt: "Maquina Shocker hack the box"
 date: 2021-08-26
 classes: wide
 header:
-  teaser: https://i.ytimg.com/vi/JGLoEts33tI/mqdefault.jpg
+  teaser: /assets/images/shocker/portada.jpg
 categories:
   -HTB -CTF
 tags:  
@@ -14,7 +14,8 @@ tags:
   - explotacion
 ---
 Esta es una resolucion completa de la maquina shocker de hack the box una maquina linux de 64 bits.
-Nivel de dificultad:
+### Nivel de dificultad:
+
 Intrusion = facil.
 
 Escala de privilegios = facil. 
@@ -23,71 +24,28 @@ Realizamos el escaneo con nmap
 ```
 nmap -p- --open -n -T5 -v 10.10.10.56
 ```
-Esta es la salida de nmap: 
+### Salida de nmap: 
 <p align="left">
-<img src="/assets/images/salida-shocker.png">
+<img src="/assets/images/shocker/salida-shocker.png">
 </p>
 
-Vemos que tiene un servidor http por el puerto 80 al entrar a esa pagina web vemos la suigente imagen:
+## Vemos que tiene un servidor http por el puerto 80 al entrar a esa pagina web vemos la suigente imagen:
 <p align="left">
-<img src="/assets/images/web-shocker.png">
+<img src="/assets/images/shocker/web-shocker.png">
 </p>
 
-El codigo fuente muestra esto:
+### El codigo fuente muestra esto:
 <p align="left">
-<img src="/assets/images/codigofuente-shocker.png">
+<img src="/assets/images/shocker/codigofuente-shocker.png">
 </p>
+### Wappalyzer:
+<p align="left">
+<img src="/assets/images/shocker/wapalyzer.png.png">
+</p>
+No se ve nada interesante en la pagina por ahora, hare un escaneo de los servicios y versiones que esten corriendo en los puertos  
 
-```
-nmap -p- (ip)
-```
-### Parametro -p
-Este parametro se usa para "apuntar" a un puerto en especifico 
-```
-nmap -p 80 (ip)
-```
-Tambien se puede usar para un rango de puertos en especifico
-```
-nmap -p 10-80 (ip)
-```
-### Parametro -v
-Este parametro va mostrando a tiempo real los resultados de los escaneos por pantalla
-```
-nmap -v (ip)
-```
-### Parametro -n 
-Este parametro quita la resolucion dns lo cual agiliza el escaneo
-```
-nmap -n (ip)
-```
-### Parametro -T(numero)
-Este parametro puede ser usado con 5 niveles (T1, T2, T3, T4, T5) 
-```
-nmap -T5 (ip)
-```
-Advertencia: este parametro hace que nuestro escaneo sea mas ruidoso/visible mientras mas alto sea el parametro mas ruidoso suele ser.
-### Parametro -sC
-Este parametro sirve para ver el servicio el cual este corriendo en un puerto 
-``` 
-nmap -sV (ip) 
-```
-### Parametro -sV 
-Este parametro Sirve para ver la version del servicio el cual este corriendo en un puerto este parametro suele venir acompañado de el parametro -sC
-```
-nmap -sV (ip)
-```
-### Parametro -oG 
-Este parametro sirve para poder exportar nuestro escaneo a un fichero grepeable
-```
-nmap (ip) -oG Puertos
-```
-### Otros
-Podemos filtrar con el parametro open para decirle a nmap que solo necesitamos los puertos con estatus open,
 
-este comando tambien puede servir para filtrar por cerrados o filtrados 
-```
-nmap --open (ip)
-```
+
 ## Junta de varios parametros
 Todos estos parametros pueden ir juntos en un solo comando lo cual agiliza mucho mas el escaneo en si
 
