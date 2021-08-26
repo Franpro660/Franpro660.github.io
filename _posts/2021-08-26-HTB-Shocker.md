@@ -44,6 +44,10 @@ nmap -p- --open -n -T5 -v 10.10.10.56
 </p>
 ### Uso de wfuzz en busca de rutas potenciales:
 ```
-wfuzz -c -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt http://10.10.10.56/
+wfuzz -c -w /usr/share/dirb/wordlists/common.txt http://10.10.10.56/FUZZ
 ```
-Ocupe el diccionario directory-list-2.3-medium.txt de dirbuster pero otros diccionarios pueden llegar a dar los mismos resultados
+Ocupe el diccionario /usr/share/dirb/wordlists/common.txt de dirbuster pero otros diccionarios pueden dar los mismos resultados
+### Salida de wfuzz:
+<p align="left">
+<img src="/assets/images/shocker/wfuzz.png">
+</p>
