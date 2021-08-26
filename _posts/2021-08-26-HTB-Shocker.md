@@ -60,11 +60,12 @@ Esta carpeta se usa principalmente para guardar archivos con la extension cgi pe
 Estos archivos son utilizados principalmente para realizar tareas que no son soportadas por el estandar html 
 
 Ej:
+
 Base de datos
 
 Contadores 
 
-### Uso de wfuzz para encontrar archivos con diferentes extensiones
+### Uso de wfuzz para encontrar archivos con diferentes extensiones:
 Creamos un diccionario con extensiones variadas para luego usarlo
 
 extensiones.txt
