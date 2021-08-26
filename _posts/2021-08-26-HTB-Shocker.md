@@ -53,7 +53,7 @@ Ocupe el diccionario /usr/share/dirb/wordlists/common.txt de dirbuster pero otro
 <img src="/assets/images/shocker/wfuzz.png">
 </p>
 Podemos ver un directorio cgi-bin/
-## Intrusion a la maquina
+
 ### cgi-bin/
 Esta carpeta se usa principalmente para guardar archivos con la extension cgi pero no es una obligacion que tengan esta extension para ser guardados aqui
 ### Archivos .cgi 
@@ -89,3 +89,6 @@ Entramos al recurso /cgi-bin/user.sh
 <p align="left">
 <img src="/assets/images/shocker/recurso.png">
 </p>
+
+## Intrusion a la maquina 
+para porder entrar a la maquina es necesario un ataque shellshock
