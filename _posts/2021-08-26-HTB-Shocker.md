@@ -5,7 +5,7 @@ excerpt: "Maquina Shocker hack the box"
 date: 2021-08-26
 classes: wide
 header:
-  teaser: /assets/images/shocker/shocker-portada.png
+  teaser: "/assets/images/shocker/shocker-portada.png"
 categories:
   -HTB -CTF
 tags:  
@@ -42,27 +42,8 @@ nmap -p- --open -n -T5 -v 10.10.10.56
 <p align="left">
 <img src="/assets/images/shocker/wapalyzer.png">
 </p>
-No se ve nada interesante en la pagina por ahora, hare un escaneo de los servicios que esten corriendo en los puertos 80 y 2222
-
-
-## Junta de varios parametros
-Todos estos parametros pueden ir juntos en un solo comando lo cual agiliza mucho mas el escaneo en si
-
-Ej:
+### Uso de wfuzz en busca de rutas potenciales:
 ```
-nmap -p- -n --open -T5 -v (ip) -oG puertos
+wfuzz -c -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt http://10.10.10.56/
 ```
-Imaginemos que este escaneo nos da como resultado los puertos 80, 50 abiertos
-
-Lo que se podria hacer es hacer un escaneo de el servicio que este corriendo en estos puertos y la version de este mismo
-``` 
-nmap -sV -sC -p 80, 50 (ip)
-```
-En base a esto ya se podria ver si ese servicio/version es vurnerable y buscar o programar algun exploit para posteriormente atacar ese servicio.
-
-Esta guia recorre algunos de los comandos y parametros posibles de nmap pero existen muchos mas puedes ver el manual de instrucciones de nmap escribiendo esto en tu terminal
-```
-man nmap
-```
-
-Esta guia esta hecha con fines educativos y realizacion de CTFs.
+Ocupe el diccionario directory-list-2.3-medium.txt de dirbuster pero otros diccionarios pueden llegar a dar los mismos resultados
