@@ -13,10 +13,10 @@ tags:
   - enumeration
   - explotacion
 ---
-Esta es una resolucion completa de la maquina shocker de hack the box una maquina linux de 64 bits 
-Repositorio oficial de nmap:
-https://github.com/nmap/nmap
-
+Esta es una resolucion completa de la maquina shocker de hack the box una maquina linux de 64 bits la cual tiene
+##nivel de dificultad:
+facil en la intrusion
+facil en la escala de privilegios 
 
 
 ## Uso de nmap 
