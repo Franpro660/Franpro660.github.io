@@ -40,10 +40,9 @@ nmap -p- --open -n -T5 -v 10.10.10.56
 </p>
 ### Wappalyzer:
 <p align="left">
-<img src="/assets/images/shocker/wapalyzer.png.png">
+<img src="/assets/images/shocker/wapalyzer.png">
 </p>
-No se ve nada interesante en la pagina por ahora, hare un escaneo de los servicios y versiones que esten corriendo en los puertos  
-
+No se ve nada interesante en la pagina por ahora, hare un escaneo de los servicios que esten corriendo en los puertos 80 y 2222
 
 
 ## Junta de varios parametros
