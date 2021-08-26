@@ -13,55 +13,23 @@ tags:
   - enumeration
   - explotacion
 ---
-Esta es una resolucion completa de la maquina shocker de hack the box una maquina linux de 64 bits la cual tiene
-##nivel de dificultad:
-facil en la intrusion
-facil en la escala de privilegios 
+Esta es una resolucion completa de la maquina shocker de hack the box una maquina linux de 64 bits.
+## Nivel de dificultad:
+intrusion = facil.
+escala de privilegios = facil. 
+
+# Reconocimiento de puertos
+Realizamos el escaneo con nmap 
+```
+nmap -p- --open -n -T5 -v 10.10.10.56
+```
+Esta es la salida de nmap: 
 
 
-## Uso de nmap 
-### Escaneo de puertos basico
+Vemos que tiene un servidor http por el puerto 80 al entrar a esa pagina web vemos la suigente imagen:
 
-Este escaneo no es recomendado solo es un ejemplo basico del uso de nmap 
-(todos estos comandos se usan desde la terminal)
-```
-nmap (ip)
-```
-Ejemplo:
-```
-nmap 143.0.13.4
-```
-Estos escaneos pueden usarse con mas de una ip
-```
-nmap 143.0.13.5 192.168.1.136
-```
-Uso de subred
-```
-nmap 192.167.9.*
-```
-Escaneo de puertos mediante un fichero .txt con las ips anotadas
-```
-nmap -iL objetivos.txt
-```
-fichero objetivos.txt:
-```
-192.168.1.124
-192.168.1.129
-192.168.1.123
-192.168.1.125
-```
-Escaneo de rango de ip 
-```
-nmap 192.168.1.123-140
-```
-Uso de nmap para conocer el sistema operativo del objetivo
-```
-nmap -o 192.168.1.143
-```
-Uso de nmap para listar equipos dentro de una red (Solo activos).
-```
-nmap -sP 192.157.1.*
-```
+
+
 ## Uso de nmap con parametros
 ### Parametros de nmap 
 Nmap ocupa parametros para funcionar existe una gran variedad de parametros en esta guia se veran algunos de ellos.
