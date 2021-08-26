@@ -34,7 +34,9 @@ Vemos que tiene un servidor http por el puerto 80 al entrar a esa pagina web vem
 </p>
 
 El codigo fuente muestra esto:
-
+<p align="left">
+<img src="/assets/images/codigofuente-shocker.png">
+</p>
 
 ```
 nmap -p- (ip)
