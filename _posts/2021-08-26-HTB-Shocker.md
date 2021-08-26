@@ -14,11 +14,11 @@ tags:
   - explotacion
 ---
 Esta es una resolucion completa de la maquina shocker de hack the box una maquina linux de 64 bits.
-## Nivel de dificultad:
+Nivel de dificultad:
 Intrusion = facil.
 
 Escala de privilegios = facil. 
-# Reconocimiento de puertos
+## Reconocimiento de puertos
 Realizamos el escaneo con nmap 
 ```
 nmap -p- --open -n -T5 -v 10.10.10.56
