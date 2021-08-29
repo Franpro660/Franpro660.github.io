@@ -14,7 +14,7 @@ tags:
   - enumeration
   - explotacion
 ---
-![](/assets/images/shocker/shocker-portada.png)
+
 Esta es una resolucion completa de la maquina shocker de hack the box una maquina linux de 64 bits.
 ### Nivel de dificultad:
 
