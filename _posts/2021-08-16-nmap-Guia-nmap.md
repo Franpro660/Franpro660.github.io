@@ -5,13 +5,15 @@ excerpt: "Guia basica de uso de la herramienta nmap."
 date: 2021-08-11
 classes: wide
 header:
-  teaser: https://www.linuxadictos.com/wp-content/uploads/nmap-logo.png
+  teaser: /assets/images/nmap.jpg
+  teaser_home_page: true
 categories:
   -nmap
 tags:  
   - nmap
   - enumeration
 ---
+![](/assets/images/nmap.jpg)
 Esta es una guia basica de la herramienta nmap.
 
 Repositorio oficial de nmap:
