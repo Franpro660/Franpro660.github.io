@@ -117,10 +117,11 @@ Con el comando
 sudo -l
 ```
 podemos ver que el usuario root permite ejecutar el comando perl sin necesidad de contraseña
+
 esta pagina nos muestra algunos comandos para escalar privilegios segun los comandos que se nos permita ejecutar
 https://gtfobins.github.io/
 
-Podemos ver que podemos ejecutar un comando perl para poder escalar privilegios
+Podemos ejecutar un comando perl para poder escalar privilegios
 ```
 sudo perl -e 'exec "/bin/sh";'
 ```
