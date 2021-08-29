@@ -13,7 +13,6 @@ tags:
   - nmap
   - enumeration
 ---
-![](/assets/images/nmap.jpg)
 Esta es una guia basica de la herramienta nmap.
 
 Repositorio oficial de nmap:
