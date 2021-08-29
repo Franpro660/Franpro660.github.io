@@ -5,7 +5,7 @@ excerpt: "Maquina Shocker hack the box"
 date: 2021-08-26
 classes: wide
 header:
-  teaser: "/assets/images/shocker/shocker.jpg"
+  teaser: /assets/images/shocker/shocker.jpg
   teaser_home_page: true
 categories:
   -HTB -CTF
