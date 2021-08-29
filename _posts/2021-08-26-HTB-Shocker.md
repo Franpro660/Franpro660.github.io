@@ -6,6 +6,7 @@ date: 2021-08-26
 classes: wide
 header:
   teaser: "/assets/images/shocker/shocker-portada.png"
+  teaser_home_page: true
 categories:
   -HTB -CTF
 tags:  
